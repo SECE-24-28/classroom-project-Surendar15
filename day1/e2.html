@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="submitpage.html">
+        <table>
+            <caption>Ear Piercing Function</caption>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input type="tel" pattern="[0-9]{10}" required></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio"  name="Gender" value="male">Male
+                    <input type="Radio"  name="Gender" value="female">Female
+                    <input type="radio"  name="Gender" value="transgender">Transgender
+                </td>
+            </tr>
+            <tr>
+                <td>Will you Attend the Function?</td>
+                <td><select name="attending" required>
+                    <option>Select an option</option>
+                    <option>Yes, I will attend</option>
+                    <option>No, I cannot attend</option>
+                </select>
+            </td>
+            <tr>
+                <td colspan="2"><center><button>Submit</button></center></td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
