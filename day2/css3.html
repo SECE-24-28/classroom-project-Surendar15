@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Cards</title>
+
+    <style>
+        body {
+            background-color: blanchedalmond;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .video-box {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .video-box video {
+            width: 100%;
+            height: 500px;
+        }
+
+        .text-box {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .text-box h3 {
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+
+        .text-box p {
+            text-align: center;
+            font-size: 14px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Responsive Image & Text (Flexbox)</h1>
+
+<div class="container">
+
+    <div class="video-box">
+        <video src="IV.mp4" controls>
+    </div>
+
+    <div class="text-box">
+        <h3>FireBox Responsive Layout</h3>
+        <p>This layout places the image and text side by side on large screens.
+           On mobile screens, they stack automatically.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

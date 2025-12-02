@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;  
+            width: 100vw;   
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+            background: antiquewhite;
+        }
+        .login-box {
+            background-color: aliceblue;
+            padding: 30px;
+            width: 95%;
+            max-width: 420px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;   
+            align-items: center;
+            gap: 1px;
+        }
+        .row label {
+            width: 120px;      
+            font-weight: bold;
+        }
+        .row input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid black;
+            background-color: antiquewhite;
+            border-radius: 8px;
+        }
+        button {
+            padding: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            color: black;
+            background-color: antiquewhite;
+            border: 1px solid black;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form class="login-box" action="submit.html">
+        <h1 style="text-align:center">Login</h1>
+        <div class="row">
+            <label for="username">Username</label>
+            <input type="text" id="username" required>
+        </div>
+        <div class="row">
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
