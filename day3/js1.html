@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            let n=parseInt(document.getElementById("t1").value);
+            let m=parseInt(document.getElementById("t2").value);
+            document.getElementById("t3").value=n+m;
+        }
+        function sub(){
+            let n=parseInt(document.getElementById("t1").value);
+            let m=parseInt(document.getElementById("t2").value);
+            document.getElementById("t3").value=n-m;
+        }
+        function mul(){
+            let n=parseInt(document.getElementById("t1").value);
+            let m=parseInt(document.getElementById("t2").value);
+            document.getElementById("t3").value=n*m;
+        }
+        function div(){
+            let n=parseInt(document.getElementById("t1").value);
+            let m=parseInt(document.getElementById("t2").value);
+            document.getElementById("t3").value=n/m;
+        }
+    </script>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-weight: bolder;
+        }
+        button{
+            background-color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Simple Calculator</caption>
+        <tr>
+            <td colspan="2"><input type="number" placeholder="Enter First number" id="t1"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="number" placeholder="Enter Second number" id="t2"></td>
+        </tr>
+        <tr>
+            <td><button onclick="add()">+</button></td>
+            <td><button onclick="sub()">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="mul()">x</button></td>
+            <td><button onclick="div()">%</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" placeholder="Result" id="t3"><br></td>
+        </tr>
+    </table>
+</body>
+</html>

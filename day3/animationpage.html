@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG TEMPLE</title>
+    <style>
+        *{
+            padding: 0px;
+            margin:0px;
+        }
+        ol{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        li{
+            padding-left: 10px;
+            font-size: 1.2rem;
+        }
+        nav{
+            padding: 10px;
+            color: white;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+            z-index: -1;
+        }
+        .txt{
+            color: white;
+            position: fixed;
+            top:200px;
+            left:20px;
+        }
+        p{
+            width:600px;
+        }
+        img{
+            width: 30px;
+            height: 30px;
+            padding-left: 5px;
+            border-radius: 50%;
+        }
+        img:hover{
+            transform: translateY(-5px);
+        }
+        footer{
+            position: fixed;
+            left: 20px;
+            bottom: 10px; 
+        }
+        button{
+            left:20px;
+            margin-top: 10px;
+            padding: 15px;
+            transition: all 0.4s;
+            border-radius:5px;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            border: none;
+        }
+        button:hover{
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header class="cont">
+     <nav>
+        <h1>BRIHADEESWAR TEMPLE</h1>
+        <ol>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Gallery</li>
+        </ol>
+    </nav>
+    <main>
+    <video src="temple.mp4" autoplay muted loop></video>
+    </main>
+    <div class="txt">
+        <h3>NEVER STOP</h3>
+        <h1>EXPLORING THE TANJORE'S BIG TEMPLE</h1>
+        <br>
+        <p>Exploring the Tanjore (Thanjavur) Big Temple feels like walking into a living museum of Chola history, stone carvings, and devotion. As you enter through the towering gopuram and step into the vast courtyard, the sight of the majestic vimana rising high above the sanctum, the massive Nandi, and the intricate sculptures all around creates a sense of awe and calm at the same time. Moving slowly along the pillared corridors, reading the ancient inscriptions on the walls, and watching the soft light fall on the Shiva lingam gives a deep feeling of connection to the artisans, kings, and devotees who have been coming here for more than a thousand years.</p><button>EXPLORE</button>
+    <h1> சோழ தேசத்தின் அடையாளம்</h1></div>
+    <footer>
+        <ol>
+            <li><img src="f.jpg"></li>
+            <li><img src="i.jpg"></li>
+        </ol>
+    </footer>
+    </header>
+</body>
+</html>
