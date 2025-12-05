@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function demo()
+       {
+        let i=document.getElementById("im");
+        if(i.src.includes("fb.jpg"))
+       {
+        i.src="wp.jpg";
+       }
+       else
+       {
+        i.src="fb.jpg";
+       }
+    }
+       function demo2()
+       {
+        let i=document.getElementById("im");
+        if(i.src.includes("fb.jpg"))
+       {
+        i.src="wp.jpg";
+       }
+       else
+       {
+        i.src="fb.jpg";
+       }
+       }
+       setInterval(demo,2000)
+      
+    </script>
+    <style>
+        .one
+        {
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- <select>
+        <option value="">Select Any one Sports</option>
+        <option value="Cricket">Cricket</option>
+         <option value="Football">Football</option>
+        <option value="tennis">Tennis</option>
+        <option value="Badminton">Badminton</option>
+
+    </select> -->
+    <img src="fb.jpg" alt="" height="400px" width="400px" id="im">
+    <button onclick="demo()" class="one">Previous</button>
+    <button onclick="demo2()">Next</button>
+</body>
+</html>

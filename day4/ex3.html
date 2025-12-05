@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="index.js"></script> -->
+</head>
+<body>
+    
+     <input type="text" placeholder="Enter the item" id="one">
+     <button id="two">Add</button>
+     
+     <script>
+                
+        let a = document.getElementById("one");
+        let btn = document.getElementById("two");
+        btn.addEventListener("click",  function(){
+        let p = document.createElement("p");
+        p.textContent = a.value;
+        p.className = "text-3xl font-bold text-red-500";
+        document.body.appendChild(p);
+        });
+
+
+     </script>
+</body>
+</html>

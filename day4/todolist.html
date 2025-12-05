@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        #taskInput {
+            padding: 8px;
+        }
+
+        button {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        ul {
+            margin-top: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .done {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .delete-btn {
+            margin-left: 10px;
+            padding: 4px 8px;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>Simple To-Do List</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList"></ul>
+
+
+    <script>
+        function addTask() {
+            let input = document.getElementById("taskInput");
+            let taskText = input.value.trim();
+
+            if(taskText === "") {
+                return;
+            }
+
+            let ul = document.getElementById("taskList");
+
+            // Create li element
+            let li = document.createElement("li");
+            li.textContent = taskText;
+
+            // Mark task done when clicked
+            li.addEventListener("click", function () {
+                li.classList.toggle("done");
+            });
+
+            // Delete button
+            let delBtn = document.createElement("button");
+            delBtn.textContent = "Delete";
+            delBtn.className = "delete-btn";
+
+            delBtn.addEventListener("click", function () {
+                ul.removeChild(li);
+            });
+
+            li.appendChild(delBtn);
+            ul.appendChild(li);
+
+            input.value = ""; // Clear input box
+        }
+    </script>
+
+</body>
+</html>

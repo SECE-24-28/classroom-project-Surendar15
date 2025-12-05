@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { transition: 0.1s; padding: 20px; }
+        .light { background: white; color: black; }
+        .dark   { background: black; color: white; }
+        button { padding: 10px 20px; margin-top: 10px; }
+    </style>
+</head>
+<body class="light">
+    <h1 id="text">Light Mode</h1>
+    <button onclick="toggleMode()">Switch Mode</button>
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            const text = document.getElementById('text');
+            if (body.classList.contains('light')) {
+                body.className = 'dark';
+                text.textContent = 'Dark Mode';
+            } else {
+                body.className = 'light';
+                text.textContent = 'Light Mode';
+            }
+        }
+    </script>
+</body>
+</html>

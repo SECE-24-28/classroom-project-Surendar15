@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <p id="error" style="color: red;"></p>
+        <br>
+        <br>
+        <label>Username:</label>
+        <input type="text" id="us">
+        <br><br>
+        <label>Password:</label>
+        <input type="password" id="pa">
+        <br><br>
+        <button type="submit" id="sub">Submit</button>
+    </form>
+    <script>
+        let un=document.getElementById("us");
+        let pw=document.getElementById("pa");
+        let error=document.getElementById("error");
+        let sub=document.getElementById("sub");
+        sub.addEventListener("click",(e)=>{
+            e.preventDefault();
+            if(un.value==""||pw.value=="")
+                error.innerHTML="field should not be empty";
+            else{
+                alert("login success")
+                un.value="";
+                pw.value="";
+                error.innerHTML="";
+            }
+        })
+    </script>
+</body>
+</html>
