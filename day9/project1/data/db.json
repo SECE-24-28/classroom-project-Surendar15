@@ -1,0 +1,19 @@
+{
+    "student":
+         [
+            {
+            "id": 1,
+            "name": "Arun Kumar",
+            "mark": 87
+            },{
+            "id": 2,
+            "name": "Vimal Raj",
+            "mark": 92
+            },{
+            "id": 3,
+            "name": "Dhanya Sri",
+            "mark": 78
+            }
+        ]
+
+}
